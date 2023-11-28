@@ -1,0 +1,12 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+}
+section img {
+  width: 400px;
+  height: 250px;
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

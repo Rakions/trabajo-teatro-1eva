@@ -2,5 +2,8 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "sass": "^1.69.5"
+  },
+  "scripts": {
+    "compilarSass": "sass web/src/styles/aboutUs.scss web/src/styles/aboutUs.css"
   }
 }
