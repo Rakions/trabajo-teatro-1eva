@@ -11,3 +11,18 @@
   --color-texto-black: #00000000;
   --color-texto-white: #fefefe;
 }
+
+.footer {
+  width: 100%;
+  height: 350px;
+  padding: 0.5rem;
+}
+
+.footer_wrapper {
+  background-color: var(--color-principal);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 4;
+}
