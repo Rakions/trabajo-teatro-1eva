@@ -1,0 +1,9 @@
+.mainPage .mainPage_mainImage {
+  width: 100%;
+  height: 400px;
+}
+.mainPage .mainPage_mainImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
