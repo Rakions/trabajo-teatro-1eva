@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
+
+main{
+  padding: 2rem;
+}
+
 :root {
   --color-fondo: #f5f1ea;
   --color-principal: #cda881;
@@ -56,8 +61,8 @@ li {
   justify-content: space-between;
   gap: 1rem;
   font-weight: 700;
-    font-size: 16px;
-    color: var(--color-secundario);
+  font-size: 16px;
+  color: var(--color-secundario);
 }
 
 .header_interestLinks a {
