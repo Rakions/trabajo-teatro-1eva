@@ -18,7 +18,7 @@ li {
   list-style-type: none;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,11 @@ header {
   margin-top: 2rem;
 }
 
-header nav {
+.header_nav {
   width: 100%;
 }
 
-header ul {
+.header_ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,11 +39,15 @@ header ul {
   gap: 2rem;
 }
 
-header nav ul li {
+.header_li {
   width: 100%;
 }
 
-header nav ul li:first-child {
+.header_li a img {
+  width: 100%;
+}
+
+.header_li:first-child {
   display: none;
 }
 
@@ -53,7 +57,12 @@ header nav ul li:first-child {
   gap: 1rem;
 }
 
-header div {
+.header_interestLinks a {
+  text-decoration: none;
+  color: var(--color-secundario);
+}
+
+.header_information {
   display: none;
 }
 
@@ -62,10 +71,12 @@ header div {
   padding: 0.5rem;
   color: var(--color-secundario);
 }
+
 .footer a {
   color: var(--color-secundario);
   text-decoration: none;
 }
+
 .footer_wrapper {
   background-color: var(--color-principal);
   width: 100%;
@@ -74,61 +85,96 @@ header div {
   display: grid;
   gap: 1rem;
 }
+
 .footer_column {
   padding: 0.3rem 1rem;
 }
+
 .footer_column:first-child {
   max-height: 100px;
 }
+
 .footer_column:first-child p {
   display: none;
 }
+
 .footer_logo {
   width: 100%;
   object-fit: contain;
 }
+
 .footer_socials i {
   font-size: 2.3rem;
 }
 
 @media (min-width: 768px) {
-  header {
+  .header {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    height: 5rem;
+    margin-inline: 2rem;
     margin-top: 2rem;
   }
 
-  header ul {
+  .header_nav {
+    width: 100%;
+  }
+
+  .header_ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
+  }
+
+  .header_li {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header_li a img {
+    width: 100%;
+  }
+
+  .header_li:first-child {
+    display: none;
   }
 
   .header_interestLinks {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
   }
 
-  header div {
-    display: flex;
+  .header_interestLinks a {
+    text-decoration: none;
+    color: var(--color-secundario);
+  }
+
+  .header_information {
+    display: none;
   }
 
   .footer {
     height: 200px;
   }
+
   .footer_wrapper {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
+
   .footer_column:first-child {
     width: 200px;
   }
+
   .footer_column:first-child p {
     display: block;
   }
+
   .footer_column:last-child {
     display: none;
   }
