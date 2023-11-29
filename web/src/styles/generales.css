@@ -7,8 +7,14 @@
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
-main{
+main {
   padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 5rem;
+  }
 }
 
 :root {

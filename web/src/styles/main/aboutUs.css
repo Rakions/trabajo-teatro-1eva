@@ -45,6 +45,7 @@
     font-weight: 700;
     width: 100%;
     text-align: start;
+    margin-bottom: 2rem;
   }
   .aboutUs_section p {
     margin-block: 1rem;
@@ -56,6 +57,8 @@
   }
   .aboutUs_section div {
     display: flex;
+    align-items: center;
+    gap: 2rem;
   }
   .aboutUs_section div div {
     flex-direction: column;
