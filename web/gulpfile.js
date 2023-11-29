@@ -3,8 +3,8 @@ const sass = require("gulp-sass")(require("sass"));
 const concat = require("gulp-concat");
 const minify = require("gulp-minify");
 const watch = require("gulp-watch");
-const cssFiles = "./web/src/styles/*.scss";
-const jsFiles = "./web/src/services/*.js";
+const cssFiles = "./src/styles/*.scss";
+const jsFiles = "./src/services/*.js";
 
 gulp.task("compiler-sass", function (done) {
   gulp
