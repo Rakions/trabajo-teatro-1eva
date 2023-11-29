@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
+
+main {
+  padding: 0 2rem;
+}
+
 :root {
   --color-fondo: #f5f1ea;
   --color-principal: #cda881;
