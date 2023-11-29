@@ -54,7 +54,7 @@ li {
 }
 
 .header_li a img {
-  width: 100%;
+  width: 300px;
 }
 
 .header_li:first-child {
@@ -148,8 +148,7 @@ li {
   }
 
   .header_li a img {
-    width: 25rem;
-    height: 5rem;
+    width: 100%;
   }
 
   .header_li:first-child {
