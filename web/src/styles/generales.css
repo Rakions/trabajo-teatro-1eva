@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+:root {
+  --color-fondo-componentes: #f5f1ea;
+  --color-fondo: #fafafa;
+  --color-principal: #cda881;
+  --color-secundario: #4f4a45;
+  --color-texto-black: #00000000;
+  --color-texto-white: #fefefe;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +32,10 @@ main {
   --color-secundario: #4f4a45;
   --color-texto-black: #00000000;
   --color-texto-white: #fefefe;
+}
+
+body {
+  background-color: var(--color-fondo);
 }
 
 li {
@@ -55,7 +68,7 @@ li {
 }
 
 .header_li a img {
-  width: 100%;
+  width: 300px;
 }
 
 .header_li:first-child {
@@ -98,6 +111,7 @@ li {
   border-radius: 15px;
   display: grid;
   gap: 1rem;
+  padding: 1rem 0;
 }
 
 .footer_column {
@@ -149,8 +163,7 @@ li {
   }
 
   .header_li a img {
-    width: 25rem;
-    height: 5rem;
+    width: 100%;
   }
 
   .header_li:first-child {

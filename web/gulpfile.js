@@ -7,10 +7,7 @@ const cssFiles = "./src/styles/*.scss";
 const jsFiles = "./src/services/*.js";
 
 gulp.task("compiler-sass", function (done) {
-  gulp
-    .src(cssFiles)
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./src/styles/main/"));
+  gulp.src(cssFiles).pipe(sass().on("error", sass.logError)).pipe(gulp.dest("./src/styles/main"));
   done();
 });
 
