@@ -20,6 +20,20 @@ main {
   padding: 2rem;
 }
 
+@media (min-width: 768px) {
+  main {
+    padding: 5rem;
+  }
+}
+
+:root {
+  --color-fondo: #f5f1ea;
+  --color-principal: #cda881;
+  --color-secundario: #4f4a45;
+  --color-texto-black: #00000000;
+  --color-texto-white: #fefefe;
+}
+
 body {
   background-color: var(--color-fondo);
 }

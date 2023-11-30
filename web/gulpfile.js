@@ -13,10 +13,10 @@ gulp.task("compiler-sass", function (done) {
 
 gulp.task("scripts", function (done) {
   gulp
-    .src("./web/src/services/*.js")
+    .src("./src/services/*.js")
     .pipe(concat("main-min.js"))
     .pipe(minify())
-    .pipe(gulp.dest("./web/src/services/main/"));
+    .pipe(gulp.dest("./src/services/main/"));
   done();
 });
 
