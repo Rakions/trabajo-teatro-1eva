@@ -64,11 +64,121 @@
     width: 336px;
     height: 305px;
     background-color: var(--color-fondo-componentes);
+    padding: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 3px;
+    .seat {
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-principal);
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: #62ae00;
+      }
+    }
+  }
+
+  .seats_all_seats_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 5px;
+
+    div {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+    }
+  }
+
+  .selected_seats {
+    background-color: var(--color-fondo-componentes);
+    padding: 1rem;
+    border-radius: 15px;
+
+    h2 {
+      text-decoration: underline;
+    }
+
+    .selected_seats_list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      gap: 10px;
+
+      li {
+        width: 100%;
+        justify-content: space-between;
+        display: inline-flex;
+
+        div:nth-child(2) {
+          display: flex;
+          gap: 10px;
+        }
+
+        button {
+          background: var(--color-principal);
+          padding: 2px 5px;
+          border-radius: 50px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .selected_seats_total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      button {
+        background-color: var(--color-principal);
+        color: white;
+        border: none;
+        padding: 7px 15px;
+        border-radius: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
   }
 }
 
 @media (min-width: 768px) {
   .function {
     width: 336px;
+  }
+
+  .seats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seats_all_seats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .seats_all_seats_image {
+      max-width: 740px;
+      width: 100%;
+      height: 500px;
+    }
   }
 }
