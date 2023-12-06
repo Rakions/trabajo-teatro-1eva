@@ -23,9 +23,19 @@ router.post("/", (req, res) => {
   res.send(obraService.createObra(nombre, descripcion, categoria));
 });
 
-router.put("/", (req, res) => {
+router.put("/nombre", (req, res) => {
   const { id, nombre } = req.body;
   res.send(obraService.updateObraNombre(id, nombre));
+});
+
+router.put("/descripcion", (req, res) => {
+  const { id, descripcion } = req.body;
+  res.send(obraService.updateObraDescripcion(id, descripcion));
+});
+
+router.put("/categoria", (req, res) => {
+  const { id, categoria } = req.body;
+  res.send(obraService.updateObraCategoria(id, categoria));
 });
 
 module.exports = router;
