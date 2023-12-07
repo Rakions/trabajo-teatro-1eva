@@ -84,7 +84,21 @@ const obraService = {
     });
     saveObrasToJson(obras);
   },
+  makeCompra: function (id_obra, id_asiento) {
+    let obras = this.getAllObras();
+    obras.map((obra) => {
+      if (obra.id === id_obra) {
+        obra.asientos.map((asiento) => {
+          if (asiento.numero === id_asiento) {
+            asiento.ocupado = true;
+          }
+        });
+      }
+    });
+    saveObrasToJson(obras);
+  },
 };
 
 var listaObras = getObrasFromJSON();
+
 module.exports = obraService;
