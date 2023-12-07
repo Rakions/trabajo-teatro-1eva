@@ -1,7 +1,7 @@
 [
   {
     "id": "ab08d8fe-d2d3-4e44-ab29-4c95047a09b2",
-    "nombre": "prueba marcos",
+    "nombre": "ahora si que si",
     "descripcion": "pero que mucho",
     "categoria": "comedia",
     "asientos": [
@@ -1060,6 +1060,270 @@
     "nombre": "prueba 4",
     "descripcion": "prueba 4",
     "categoria": "prueba",
+    "asientos": [
+      {
+        "numero": 0,
+        "ocupado": false
+      },
+      {
+        "numero": 1,
+        "ocupado": false
+      },
+      {
+        "numero": 2,
+        "ocupado": false
+      },
+      {
+        "numero": 3,
+        "ocupado": false
+      },
+      {
+        "numero": 4,
+        "ocupado": false
+      },
+      {
+        "numero": 5,
+        "ocupado": false
+      },
+      {
+        "numero": 6,
+        "ocupado": false
+      },
+      {
+        "numero": 7,
+        "ocupado": false
+      },
+      {
+        "numero": 8,
+        "ocupado": false
+      },
+      {
+        "numero": 9,
+        "ocupado": false
+      },
+      {
+        "numero": 10,
+        "ocupado": false
+      },
+      {
+        "numero": 11,
+        "ocupado": false
+      },
+      {
+        "numero": 12,
+        "ocupado": false
+      },
+      {
+        "numero": 13,
+        "ocupado": false
+      },
+      {
+        "numero": 14,
+        "ocupado": false
+      },
+      {
+        "numero": 15,
+        "ocupado": false
+      },
+      {
+        "numero": 16,
+        "ocupado": false
+      },
+      {
+        "numero": 17,
+        "ocupado": false
+      },
+      {
+        "numero": 18,
+        "ocupado": false
+      },
+      {
+        "numero": 19,
+        "ocupado": false
+      },
+      {
+        "numero": 20,
+        "ocupado": false
+      },
+      {
+        "numero": 21,
+        "ocupado": false
+      },
+      {
+        "numero": 22,
+        "ocupado": false
+      },
+      {
+        "numero": 23,
+        "ocupado": false
+      },
+      {
+        "numero": 24,
+        "ocupado": false
+      },
+      {
+        "numero": 25,
+        "ocupado": false
+      },
+      {
+        "numero": 26,
+        "ocupado": false
+      },
+      {
+        "numero": 27,
+        "ocupado": false
+      },
+      {
+        "numero": 28,
+        "ocupado": false
+      },
+      {
+        "numero": 29,
+        "ocupado": false
+      },
+      {
+        "numero": 30,
+        "ocupado": false
+      },
+      {
+        "numero": 31,
+        "ocupado": false
+      },
+      {
+        "numero": 32,
+        "ocupado": false
+      },
+      {
+        "numero": 33,
+        "ocupado": false
+      },
+      {
+        "numero": 34,
+        "ocupado": false
+      },
+      {
+        "numero": 35,
+        "ocupado": false
+      },
+      {
+        "numero": 36,
+        "ocupado": false
+      },
+      {
+        "numero": 37,
+        "ocupado": false
+      },
+      {
+        "numero": 38,
+        "ocupado": false
+      },
+      {
+        "numero": 39,
+        "ocupado": false
+      },
+      {
+        "numero": 40,
+        "ocupado": false
+      },
+      {
+        "numero": 41,
+        "ocupado": false
+      },
+      {
+        "numero": 42,
+        "ocupado": false
+      },
+      {
+        "numero": 43,
+        "ocupado": false
+      },
+      {
+        "numero": 44,
+        "ocupado": false
+      },
+      {
+        "numero": 45,
+        "ocupado": false
+      },
+      {
+        "numero": 46,
+        "ocupado": false
+      },
+      {
+        "numero": 47,
+        "ocupado": false
+      },
+      {
+        "numero": 48,
+        "ocupado": false
+      },
+      {
+        "numero": 49,
+        "ocupado": false
+      },
+      {
+        "numero": 50,
+        "ocupado": false
+      },
+      {
+        "numero": 51,
+        "ocupado": false
+      },
+      {
+        "numero": 52,
+        "ocupado": false
+      },
+      {
+        "numero": 53,
+        "ocupado": false
+      },
+      {
+        "numero": 54,
+        "ocupado": false
+      },
+      {
+        "numero": 55,
+        "ocupado": false
+      },
+      {
+        "numero": 56,
+        "ocupado": false
+      },
+      {
+        "numero": 57,
+        "ocupado": false
+      },
+      {
+        "numero": 58,
+        "ocupado": false
+      },
+      {
+        "numero": 59,
+        "ocupado": false
+      },
+      {
+        "numero": 60,
+        "ocupado": false
+      },
+      {
+        "numero": 61,
+        "ocupado": false
+      },
+      {
+        "numero": 62,
+        "ocupado": false
+      },
+      {
+        "numero": 63,
+        "ocupado": false
+      }
+    ]
+  },
+  {
+    "id": "243c6a95-6aa1-4ffc-954d-2fd7f0fa709d",
+    "nombre": "prueba marcos",
+    "descripcion": "",
+    "categoria": "",
     "asientos": [
       {
         "numero": 0,

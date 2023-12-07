@@ -3,7 +3,7 @@ const path = require("path");
 const Obra = require("../Models/Obra");
 const Asiento = require("../Models/Asiento");
 
-const obrasFilePath = path.join(__dirname, "../data/obras.json");
+const obrasFilePath = path.join(__dirname, "../../Data/obras.json");
 
 function getObrasFromJSON() {
   try {
@@ -27,15 +27,15 @@ function saveObrasToJson(listaObras) {
 
 const obraService = {
   getAllObras: () => {
-    return listaObras;
+    return getObrasFromJSON();
   },
   getObraById: (id) => {
-    return listaObras.filter((obra) => {
+    return getObrasFromJSON().filter((obra) => {
       return obra.id === id;
     });
   },
   getObrasByNombre: (nombre) => {
-    return listaObras.filter((obra) => {
+    return getObrasFromJSON().filter((obra) => {
       return (
         obra.nombre.toLowerCase().replace(/\s/g, "") ===
         nombre.trim().toLowerCase().replace(/\s/g, "")
@@ -43,7 +43,7 @@ const obraService = {
     });
   },
   getObraByCategoria: (categoria) => {
-    return listaObras.filter((obra) => {
+    return getObrasFromJSON().filter((obra) => {
       return obra.categoria.toLowerCase() === categoria.toLowerCase();
     });
   },
