@@ -1,0 +1,33 @@
+const fs = require("fs");
+const path = require("path");
+const User = require("../Models/User");
+
+const obrasFilePath = path.join(__dirname, "../../Data/users.json");
+
+function getUsersFromJson() {
+  try {
+    const obrasData = fs.readFileSync(obrasFilePath, "utf-8");
+    return JSON.parse(obrasData);
+  } catch (error) {
+    console.error("Error al cargar los usuarios desde el archivo JSON:", error.message);
+    return [];
+  }
+}
+
+function saveUsersToJson(listaUsers) {
+  try {
+    fs.writeFileSync(obrasFilePath, "[]");
+    fs.writeFileSync(obrasFilePath, JSON.stringify(listaObras, null, 2), "utf-8");
+    console.log("Usuarios guardadas correctamente en el archivo JSON.");
+  } catch (error) {
+    console.error("Error al guardar los usuarios en el archivo JSON:", error.message);
+  }
+}
+
+const userService = {
+  getAllUsers: () => {
+    return;
+  },
+};
+
+let listaUser = getUsersFromJson();
