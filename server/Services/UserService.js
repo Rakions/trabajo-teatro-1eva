@@ -26,7 +26,17 @@ function saveUsersToJson(listaUsers) {
 
 const userService = {
   getAllUsers: () => {
-    return;
+    return getUsersFromJson();
+  },
+  getUserById: (id) => {
+    return getUsersFromJson().filter((user) => {
+      return user.id === id;
+    });
+  },
+  createUser: (nombre, email, contra) => {
+    let user = new User(nombre, email, contra);
+    listaUser.push(user);
+    saveUsersToJson(listaUser);
   },
 };
 

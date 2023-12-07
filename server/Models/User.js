@@ -3,7 +3,7 @@ class User {
     this.nombre = nombre;
     this.email = email;
     this.contra = contra;
-    var entradasCompradas = [];
+    this.entradasCompradas = [];
   }
 }
 
