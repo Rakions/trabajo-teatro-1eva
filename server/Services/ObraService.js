@@ -84,24 +84,21 @@ const obraService = {
     });
     saveObrasToJson(obras);
   },
-  // makeCompra: function (id_obra, id_asiento) {
-  //   let obras = this.getAllObras();
-  //   console.log(obras);
-  //   obras.map((obra) => {
-  //     if (obra.id === id_obra) {
-  //       obra.asientos.map((asiento) => {
-  //         if (asiento.numero === id_asiento) {
-  //           asiento.ocupado = true;
-  //         }
-  //       });
-  //     }
-  //   });
-  //   saveObrasToJson(obra);
-  // },
+  makeCompra: function (id_obra, id_asiento) {
+    let obras = this.getAllObras();
+    obras.map((obra) => {
+      if (obra.id === id_obra) {
+        obra.asientos.map((asiento) => {
+          if (asiento.numero === id_asiento) {
+            asiento.ocupado = true;
+          }
+        });
+      }
+    });
+    saveObrasToJson(obras);
+  },
 };
 
 var listaObras = getObrasFromJSON();
-
-// obraService.makeCompra("ab08d8fe-d2d3-4e44-ab29-4c95047a09b2", 0);
 
 module.exports = obraService;
