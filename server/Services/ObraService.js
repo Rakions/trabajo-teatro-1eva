@@ -3,7 +3,7 @@ const path = require("path");
 const Obra = require("../Models/Obra");
 const Asiento = require("../Models/Asiento");
 
-const obrasFilePath = path.join(__dirname, "../data/obras.json");
+const obrasFilePath = path.join(__dirname, "../Data/obras.json");
 
 var listaObras = [];
 
