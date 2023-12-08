@@ -10,8 +10,8 @@
 .seats .seats_goBack {
   position: absolute;
   top: 0;
-  left: 100px;
-  margin-left: 1rem;
+  left: 0;
+  margin-left: 2rem;
   color: black;
   font-weight: 700;
 }
@@ -146,8 +146,11 @@
   .seats {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+  }
+  .seats .seats_goBack {
+    margin-left: 5rem;
   }
   .seats_all_seats {
     display: flex;
