@@ -61,7 +61,7 @@
             gap: 0.5rem;
         }
 
-        .data_information_section_place{
+        .data_information_section_place {
             display: flex;
             gap: 1rem;
         }
@@ -99,4 +99,20 @@
     margin-left: 5vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    .purchase_buttons_back {
+        border-radius: 10px;
+        padding: 0.5rem;
+        width: 8rem;
+        background-color: var(--color-secundario);
+        border: none;
+    }
+
+    .purchase_buttons_purchase {
+        border-radius: 10px;
+        padding: 0.5rem;
+        width: 10rem;
+        background-color: var(--color-principal);
+        order: none;
+    }
 }
