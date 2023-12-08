@@ -27,6 +27,26 @@
                 width: 45%;
             }
         }
+
+        input[type="text"] {
+            appearance: none;
+            border: none;
+            outline: none;
+            border-bottom: 0.2em solid rgb(61, 61, 61);
+            background: transparent;
+            border-radius: 0.2em 0.2em 0 0;
+            padding: 0.4em;
+        }
+
+        input[type="email"] {
+            appearance: none;
+            border: none;
+            outline: none;
+            border-bottom: 0.2em solid rgb(61, 61, 61);
+            background: transparent;
+            border-radius: 0.2em 0.2em 0 0;
+            padding: 0.4em;
+        }
     }
 }
 
@@ -104,6 +124,7 @@
         border-radius: 10px;
         padding: 0.5rem;
         width: 8rem;
+        color: var(--color-texto-white);
         background-color: var(--color-secundario);
         border: none;
     }
@@ -113,6 +134,8 @@
         padding: 0.5rem;
         width: 10rem;
         background-color: var(--color-principal);
+        font-weight: 900;
+        color: var(--color-texto-white);
         order: none;
     }
 }
