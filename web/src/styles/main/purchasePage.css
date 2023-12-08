@@ -110,17 +110,19 @@
 .purchase_buttons .purchase_buttons_back {
   border-radius: 10px;
   padding: 0.5rem;
-  width: 8rem;
+  padding-inline: 1rem;
   color: var(--color-texto-white);
   background-color: var(--color-secundario);
   border: none;
+  text-decoration: none;
 }
 .purchase_buttons .purchase_buttons_purchase {
   border-radius: 10px;
   padding: 0.5rem;
-  width: 10rem;
+  padding-inline: 2rem;
   background-color: var(--color-principal);
   font-weight: 900;
   color: var(--color-texto-white);
-  order: none;
+  border: none;
+  text-decoration: none;
 }
