@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const User = require("../Models/User");
 
-const obrasFilePath = path.join(__dirname, "../../Data/users.json");
+const obrasFilePath = path.join(__dirname, "../Data/users.json");
 
 function getUsersFromJson() {
   try {
@@ -41,7 +41,7 @@ const userService = {
   deleteUser: (id_user) => {
     let users = getUsersFromJson();
     const index = users.findIndex((user) => {
-      user.id.toLowerCase() === id_user.toLowerCase();
+      user.id === id_user;
     });
     users.splice(index, 1);
     saveUsersToJson(users);
@@ -49,3 +49,5 @@ const userService = {
 };
 
 let listaUser = getUsersFromJson();
+
+module.exports = userService;
