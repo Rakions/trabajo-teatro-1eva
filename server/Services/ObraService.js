@@ -3,7 +3,9 @@ const path = require("path");
 const Obra = require("../Models/Obra");
 const Asiento = require("../Models/Asiento");
 
-const obrasFilePath = path.join(__dirname, "../../Data/obras.json");
+const obrasFilePath = path.join(__dirname, "../Data/obras.json");
+
+var listaObras = [];
 
 function getObrasFromJSON() {
   try {
@@ -27,15 +29,15 @@ function saveObrasToJson(listaObras) {
 
 const obraService = {
   getAllObras: () => {
-    return getObrasFromJSON();
+    return listaObras;
   },
   getObraById: (id) => {
-    return getObrasFromJSON().filter((obra) => {
-      return obra.id === id;
+    return getObrasFromJSON().find((obra) => {
+      obra.id === id;
     });
   },
   getObrasByNombre: (nombre) => {
-    return getObrasFromJSON().filter((obra) => {
+    return listaObras.filter((obra) => {
       return (
         obra.nombre.toLowerCase().replace(/\s/g, "") ===
         nombre.trim().toLowerCase().replace(/\s/g, "")
@@ -43,7 +45,7 @@ const obraService = {
     });
   },
   getObraByCategoria: (categoria) => {
-    return getObrasFromJSON().filter((obra) => {
+    return listaObras.filter((obra) => {
       return obra.categoria.toLowerCase() === categoria.toLowerCase();
     });
   },
@@ -59,46 +61,51 @@ const obraService = {
   },
   updateObraNombre: (id, nombre) => {
     let obras = getObrasFromJSON();
-    obras.forEach((obra) => {
-      if (obra.id.toLowerCase() === id.toLowerCase()) {
-        obra.nombre = nombre;
-      }
+    const index = obras.findIndex((obra) => {
+      obra.id.toLowerCase() === id.toLowerCase();
     });
+    obras[index].nombre = nombre;
+
     saveObrasToJson(obras);
   },
   updateObraDescripcion: (id, descripcion) => {
     let obras = getObrasFromJSON();
-    obras.forEach((obra) => {
-      if (obra.id.toLowerCase() === id.toLowerCase()) {
-        obra.descripcion = descripcion;
-      }
+    const index = obras.findIndex((obra) => {
+      obra.id.toLowerCase() === id.toLowerCase();
     });
+    obras[index].descripcion = descripcion;
     saveObrasToJson(obras);
   },
   updateObraCategoria: (id, categoria) => {
     let obras = getObrasFromJSON();
-    obras.forEach((obra) => {
-      if (obra.id.toLowerCase() === id.toLowerCase()) {
-        obra.categoria = categoria;
-      }
+    const index = obras.findIndex((obra) => {
+      obra.id.toLowerCase() === id.toLowerCase();
     });
+    obras[index].categoria = categoria;
+    saveObrasToJson(obras);
+  },
+  deleteObra: (id) => {
+    let obras = getObrasFromJSON();
+    const index = obras.findIndex((obras) => {
+      obras.id.toLowerCase() === id.toLowerCase();
+    });
+    obras.splice(index, 1);
     saveObrasToJson(obras);
   },
   makeCompra: function (id_obra, id_asiento) {
     let obras = this.getAllObras();
-    obras.map((obra) => {
-      if (obra.id === id_obra) {
-        obra.asientos.map((asiento) => {
-          if (asiento.numero === id_asiento) {
-            asiento.ocupado = true;
-          }
-        });
+    const index = obras.filter((obra) => {
+      obra.id.toLowerCase() === id_obra.toLowerCase();
+    });
+    obras[index].asientos.map((asiento) => {
+      if (asiento.numero === id_asiento) {
+        asiento.ocupado = true;
       }
     });
     saveObrasToJson(obras);
   },
 };
 
-var listaObras = getObrasFromJSON();
+listaObras = getObrasFromJSON();
 
 module.exports = obraService;

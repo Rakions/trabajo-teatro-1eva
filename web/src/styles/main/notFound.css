@@ -1,0 +1,20 @@
+.not_found {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  border-radius: 10px;
+  margin-inline: 20rem;
+  background-color: var(--color-fondo-componentes);
+}
+.not_found .not_found_below {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.not_found .not_found_below a {
+  color: black;
+  font-weight: 600;
+}

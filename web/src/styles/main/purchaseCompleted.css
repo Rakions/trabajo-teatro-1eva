@@ -1,0 +1,20 @@
+.purchase_completed {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  border-radius: 10px;
+  margin-inline: 20rem;
+  background-color: var(--color-fondo-componentes);
+}
+.purchase_completed .purchase_completed_below {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.purchase_completed .purchase_completed_below a {
+  color: black;
+  font-weight: 600;
+}

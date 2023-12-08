@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const User = require("../Models/User");
 
-const obrasFilePath = path.join(__dirname, "../../Data/users.json");
+const obrasFilePath = path.join(__dirname, "../Data/users.json");
 
 function getUsersFromJson() {
   try {
@@ -17,7 +17,7 @@ function getUsersFromJson() {
 function saveUsersToJson(listaUsers) {
   try {
     fs.writeFileSync(obrasFilePath, "[]");
-    fs.writeFileSync(obrasFilePath, JSON.stringify(listaObras, null, 2), "utf-8");
+    fs.writeFileSync(obrasFilePath, JSON.stringify(listaUsers, null, 2), "utf-8");
     console.log("Usuarios guardadas correctamente en el archivo JSON.");
   } catch (error) {
     console.error("Error al guardar los usuarios en el archivo JSON:", error.message);
@@ -26,8 +26,28 @@ function saveUsersToJson(listaUsers) {
 
 const userService = {
   getAllUsers: () => {
-    return;
+    return getUsersFromJson();
+  },
+  getUserById: (id) => {
+    return getUsersFromJson().filter((user) => {
+      return user.id.toLowerCase() === id.toLowerCase();
+    });
+  },
+  createUser: (nombre, email, contra) => {
+    let user = new User(nombre, email, contra);
+    listaUser.push(user);
+    saveUsersToJson(listaUser);
+  },
+  deleteUser: (id_user) => {
+    let users = getUsersFromJson();
+    const index = users.findIndex((user) => {
+      user.id === id_user;
+    });
+    users.splice(index, 1);
+    saveUsersToJson(users);
   },
 };
 
 let listaUser = getUsersFromJson();
+
+module.exports = userService;
