@@ -38,4 +38,10 @@ router.put("/categoria", (req, res) => {
   res.send(obraService.updateObraCategoria(id, categoria));
 });
 
+router.delete("/", (req, res) => {
+  const id = req.body.id;
+  console.log(id);
+  res.send(obraService.deleteObra(id));
+});
+
 module.exports = router;

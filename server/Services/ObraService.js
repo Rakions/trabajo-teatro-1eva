@@ -29,15 +29,15 @@ function saveObrasToJson(listaObras) {
 
 const obraService = {
   getAllObras: () => {
-    return listaObras;
+    return getObrasFromJSON();
   },
   getObraById: (id) => {
-    return getObrasFromJSON().find((obra) => {
-      obra.id === id;
+    return getObrasFromJSON().filter((obra) => {
+      return obra.id === id;
     });
   },
   getObrasByNombre: (nombre) => {
-    return listaObras.filter((obra) => {
+    return getObrasFromJSON().filter((obra) => {
       return (
         obra.nombre.toLowerCase().replace(/\s/g, "") ===
         nombre.trim().toLowerCase().replace(/\s/g, "")
@@ -56,6 +56,7 @@ const obraService = {
       listaAsientos.push(new Asiento(index));
     }
     obra.asientos = listaAsientos;
+    listaAsientos = getObrasFromJSON();
     listaObras.push(obra);
     saveObrasToJson(listaObras);
   },
@@ -86,8 +87,9 @@ const obraService = {
   },
   deleteObra: (id) => {
     let obras = getObrasFromJSON();
-    const index = obras.findIndex((obras) => {
-      obras.id.toLowerCase() === id.toLowerCase();
+    const index = obras.findIndex((obra) => {
+      console.log(obra.id);
+      obra.id === id;
     });
     obras.splice(index, 1);
     saveObrasToJson(obras);
@@ -107,5 +109,4 @@ const obraService = {
 };
 
 listaObras = getObrasFromJSON();
-
 module.exports = obraService;
