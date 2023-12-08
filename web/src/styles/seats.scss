@@ -4,12 +4,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
   gap: 2rem;
 
   .seats_goBack {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100px;
     margin-left: 1rem;
     color: black;
     font-weight: 700;
