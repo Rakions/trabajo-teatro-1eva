@@ -11,6 +11,8 @@
   top: 0;
   left: 0;
   margin-left: 1rem;
+  color: black;
+  font-weight: 700;
 }
 .seats .seats_info {
   gap: 2rem;
