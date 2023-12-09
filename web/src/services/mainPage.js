@@ -51,7 +51,7 @@ async function cargarObras(categoria) {
     listaObras.innerHTML += `
       <a href="seats.html">
         <div class="function">
-          <img src="../assets/images/function_prueba.jpg" alt="" />
+          <img src="${obra.image}" alt="" />
           <div>
               <h2>${obra.nombre}</h2>
               <p>${obra.descripcion}</p>
@@ -72,3 +72,5 @@ async function cargarObras(categoria) {
 }
 
 cargarObras();
+
+localStorage.clear();
