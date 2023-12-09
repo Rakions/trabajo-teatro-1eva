@@ -44,7 +44,7 @@ async function cargarAsientos() {
   functionInfo.innerHTML = "";
   functionInfo.innerHTML += `
     <div class="function">
-      <img src="../assets/images/function_prueba.jpg" alt="" />
+      <img src="${obra[0].image}" alt="" />
       <div>
         <h2>${obra[0].nombre}</h2>
         <p>${obra[0].descripcion}</p>
