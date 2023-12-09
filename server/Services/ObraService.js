@@ -88,7 +88,6 @@ const obraService = {
   deleteObra: (id) => {
     let obras = getObrasFromJSON();
     const index = obras.findIndex((obra) => {
-      console.log(obra.id);
       obra.id === id;
     });
     obras.splice(index, 1);
@@ -96,12 +95,13 @@ const obraService = {
   },
   makeCompra: function (id_obra, id_asiento) {
     let obras = this.getAllObras();
-    const index = obras.filter((obra) => {
-      obra.id.toLowerCase() === id_obra.toLowerCase();
-    });
-    obras[index].asientos.map((asiento) => {
-      if (asiento.numero === id_asiento) {
-        asiento.ocupado = true;
+    obras.map((obra) => {
+      if (obra.id === id_obra) {
+        obra.asientos.map((asiento) => {
+          if (asiento.numero === id_asiento) {
+            asiento.ocupado = true;
+          }
+        });
       }
     });
     saveObrasToJson(obras);
