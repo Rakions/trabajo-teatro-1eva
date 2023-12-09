@@ -40,7 +40,10 @@ async function cargarObras() {
   });
 }
 
+const botonPagar = document.querySelector(".selected_seats_total > button");
+
 cargarObras();
+
 
 let id = "";
 

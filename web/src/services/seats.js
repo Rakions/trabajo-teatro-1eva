@@ -119,4 +119,9 @@ function eliminarAsiento(id_asiento) {
   actualizarLista();
 }
 
+const botonPagar = document.querySelector(".selected_seats_total > button");
+botonPagar.addEventListener("click", () => {
+  localStorage.setItem("asientos", asientosSeleccionados);
+});
+
 cargarAsientos();

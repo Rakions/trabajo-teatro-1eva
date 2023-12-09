@@ -38,6 +38,12 @@ router.put("/categoria", (req, res) => {
   res.send(obraService.updateObraCategoria(id, categoria));
 });
 
+router.put("/compra", (req, res) => {
+  const { id_obra, id_asiento } = req.body;
+  console.log(id_obra, id_asiento);
+  res.send(obraService.makeCompra(id_obra, id_asiento));
+});
+
 router.delete("/", (req, res) => {
   const id = req.body.id;
   console.log(id);
