@@ -1,8 +1,7 @@
 class Asiento {
-  constructor(numero, categoria, precio) {
+  constructor(numero, precio) {
     this.numero = numero;
     this.ocupado = false;
-    this.categoria = categoria;
     this.precio = precio;
   }
 }

@@ -19,6 +19,7 @@
   gap: 2rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .seats .function {
   max-width: 336px;
