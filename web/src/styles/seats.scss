@@ -21,10 +21,20 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    .seats_functionInfo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .function {
     max-width: 336px;
+    min-width: 250px;
+    width: 100%;
     img {
       width: 100%;
       height: 309px;
