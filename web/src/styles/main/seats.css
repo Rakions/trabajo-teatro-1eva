@@ -21,8 +21,17 @@
   flex-direction: column;
   width: 100%;
 }
+.seats .seats_info .seats_functionInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .seats .function {
   max-width: 336px;
+  min-width: 250px;
+  width: 100%;
 }
 .seats .function img {
   width: 100%;
