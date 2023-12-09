@@ -49,8 +49,8 @@ const obraService = {
       return obra.categoria.toLowerCase() === categoria.toLowerCase();
     });
   },
-  createObra: (nombre, descripcion, categoria) => {
-    let obra = new Obra(nombre, descripcion, categoria);
+  createObra: (nombre, descripcion, categoria, image_url) => {
+    let obra = new Obra(nombre, descripcion, categoria, image_url);
     let listaAsientos = [];
     for (let index = 0; index < 63; index++) {
       listaAsientos.push(new Asiento(index, 5));

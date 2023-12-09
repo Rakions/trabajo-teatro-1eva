@@ -19,8 +19,8 @@ router.get("/categoria/:categoria", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { nombre, descripcion, categoria } = req.body;
-  res.send(obraService.createObra(nombre, descripcion, categoria));
+  const { nombre, descripcion, categoria, imagen } = req.body;
+  res.send(obraService.createObra(nombre, descripcion, categoria, imagen));
 });
 
 router.put("/nombre", (req, res) => {
