@@ -16,4 +16,4 @@ const asientoService = {
   },
 };
 
-console.log(asientoService.getAsientoById("ab08d8fe-d2d3-4e44-ab29-4c95047a09b2", 0));
+module.exports = asientoService;
