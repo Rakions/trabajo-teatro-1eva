@@ -15,12 +15,12 @@
                 <ul class="header_ul">
                     <li class="header_li">
                         <div class="header_interestLinks">
-                            <a href="/">TODAS LAS FUNCIONES</a>
-                            <a href="/">OFERTAS</a>
+                            <a href="mainPage.html">TODAS LAS FUNCIONES</a>
+                            <a href="notFound.html">OFERTAS</a>
                         </div>
                     </li>
                     <li class="header_li">
-                        <a href="#"><img src="../assets/images/logos/teatro_galeguista_light.png" alt="Logo" /></a>
+                        <a href="mainPage.html"><img src="../assets/images/logos/teatro_galeguista_light.png" alt="Logo" /></a>
                     </li>
                     <li>
                         <div class="header_information">
@@ -33,8 +33,8 @@
                     </li>
                     <li class="header_li">
                         <div class="header_interestLinks">
-                            <a href="/">TODAS LAS FUNCIONES</a>
-                            <a href="/">OFERTAS</a>
+                            <a href="mainPage.html">TODAS LAS FUNCIONES</a>
+                            <a href="notFound.html">OFERTAS</a>
                         </div>
                     </li>
                 </ul>
@@ -47,61 +47,18 @@
             </div>
 
             <div class="mainPage_categorySelector">
-                <button>
+                <button onclick="getObrasCategoria('familiar')">
                     <p>FAMILIAR</p>
                 </button>
-                <button>
+                <button onclick="getObrasCategoria('comedia')">
                     <p>COMEDIA</p>
                 </button>
-                <button>
+                <button onclick="getObrasCategoria('musical')">
                     <p>MUSICAL</p>
                 </button>
             </div>
 
-            <div class="mainPage_functionsList">
-                <div class="function">
-                    <img src="../assets/images/function_prueba.jpg" alt="" />
-                    <div>
-                        <h2>Shakespeare en 97 minutos</h2>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto</p>
-                    </div>
-                </div>
-                <div class="function">
-                    <img src="../assets/images/function_prueba.jpg" alt="" />
-                    <div>
-                        <h2>Shakespeare en 97 minutos</h2>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto</p>
-                    </div>
-                </div>
-                <div class="function">
-                    <img src="../assets/images/function_prueba.jpg" alt="" />
-                    <div>
-                        <h2>Shakespeare en 97 minutos</h2>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto</p>
-                    </div>
-                </div>
-                <div class="function">
-                    <img src="../assets/images/function_prueba.jpg" alt="" />
-                    <div>
-                        <h2>Shakespeare en 97 minutos</h2>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto</p>
-                    </div>
-                </div>
-                <div class="function">
-                    <img src="../assets/images/function_prueba.jpg" alt="" />
-                    <div>
-                        <h2>Shakespeare en 97 minutos</h2>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto</p>
-                    </div>
-                </div>
-                <div class="function">
-                    <img src="../assets/images/function_prueba.jpg" alt="" />
-                    <div>
-                        <h2>Shakespeare en 97 minutos</h2>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto</p>
-                    </div>
-                </div>
-            </div>
+            <div class="mainPage_functionsList"></div>
         </main>
 
         <footer class="footer">
@@ -114,11 +71,11 @@
                 </div>
                 <div class="footer_column">
                     <h2>QUIENES SOMOS</h2>
-                    <a href="#">Quienes somos</a>
+                    <a href="aboutUs.html">Quienes somos</a>
                 </div>
                 <div class="footer_column">
                     <h2>PROMOCIONES</h2>
-                    <a href="#">Todas las promociones</a>
+                    <a href="notFound.html">Todas las promociones</a>
                 </div>
                 <div class="footer_column">
                     <h2>NUESTRAS REDES</h2>
@@ -136,4 +93,8 @@
             </div>
         </footer>
     </body>
+
+    <head>
+        <script src="../services/mainPage.js"></script>
+    </head>
 </html>

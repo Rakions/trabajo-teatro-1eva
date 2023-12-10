@@ -1,1 +1,326 @@
-[]
+[
+  {
+    "id": "ee19a7e1-3b8f-4940-add5-95d1fb65619b",
+    "nombre": "prueba",
+    "descripcion": "descripcion",
+    "image": "https://teatroprincipalzaragoza.com/wp-content/uploads/2023/07/MAYUMANA-Impulso.jpg",
+    "categoria": "comedia",
+    "asientos": [
+      {
+        "numero": 0,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 1,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 2,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 3,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 4,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 5,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 6,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 7,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 8,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 9,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 10,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 11,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 12,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 13,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 14,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 15,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 16,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 17,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 18,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 19,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 20,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 21,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 22,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 23,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 24,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 25,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 26,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 27,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 28,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 29,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 30,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 31,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 32,
+        "ocupado": true,
+        "precio": 5
+      },
+      {
+        "numero": 33,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 34,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 35,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 36,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 37,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 38,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 39,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 40,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 41,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 42,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 43,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 44,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 45,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 46,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 47,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 48,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 49,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 50,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 51,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 52,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 53,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 54,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 55,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 56,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 57,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 58,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 59,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 60,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 61,
+        "ocupado": false,
+        "precio": 5
+      },
+      {
+        "numero": 62,
+        "ocupado": false,
+        "precio": 5
+      }
+    ]
+  }
+]

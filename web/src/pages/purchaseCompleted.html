@@ -6,16 +6,17 @@
         <title>Teatro Galeguista</title>
         <link rel="stylesheet" href="../styles/generales.css" />
         <link rel="stylesheet" href="../styles/main/purchaseCompleted.css" />
-        <script src="https://kit.fontawesome.com/9e87e4d4e8.js" crossorigin="anonymous"></script>   
+        <script src="https://kit.fontawesome.com/9e87e4d4e8.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
         <header class="header">
             <nav class="header_nav">
                 <ul class="header_ul">
                     <li class="header_li">
                         <div class="header_interestLinks">
-                            <a href="/">TODAS LAS FUNCIONES</a>
-                            <a href="/">OFERTAS</a>
+                            <a href="mainPage.html">TODAS LAS FUNCIONES</a>
+                            <a href="notFound.html">OFERTAS</a>
                         </div>
                     </li>
                     <li class="header_li">
@@ -45,7 +46,7 @@
                 <h2>GRACIAS POR TU COMPRA</h2>
                 <div class="purchase_completed_below">
                     <span>Toda la información de la compra ha sido enviada al correo electrónico:</span>
-                    <span>correoususario@gmail.com</span>
+                    <span class="user_email">correoususario@gmail.com</span>
                     <a href="mainPage.html">Volver</a>
                 </div>
             </section>
@@ -61,11 +62,11 @@
                 </div>
                 <div class="footer_column">
                     <h2>QUIENES SOMOS</h2>
-                    <a href="#">Quienes somos</a>
+                    <a href="aboutUs.html">Quienes somos</a>
                 </div>
                 <div class="footer_column">
                     <h2>PROMOCIONES</h2>
-                    <a href="#">Todas las promociones</a>
+                    <a href="notFound.html">Todas las promociones</a>
                 </div>
                 <div class="footer_column">
                     <h2>NUESTRAS REDES</h2>
@@ -83,4 +84,9 @@
             </div>
         </footer>
     </body>
+
+    <script>
+        const email = localStorage.getItem("email");
+        document.querySelector(".user_email").innerHTML = email;
+    </script>
 </html>

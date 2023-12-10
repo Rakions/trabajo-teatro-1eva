@@ -16,6 +16,11 @@
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-secundario);
+}
+
 main {
   padding: 2rem;
 }

@@ -10,8 +10,8 @@
 .seats .seats_goBack {
   position: absolute;
   top: 0;
-  left: 100px;
-  margin-left: 1rem;
+  left: 0;
+  margin-left: 2rem;
   color: black;
   font-weight: 700;
 }
@@ -19,9 +19,19 @@
   gap: 2rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.seats .seats_info .seats_functionInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .seats .function {
   max-width: 336px;
+  min-width: 250px;
+  width: 100%;
 }
 .seats .function img {
   width: 100%;
@@ -100,10 +110,10 @@
 }
 .seats .selected_seats .selected_seats_list {
   width: 100%;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 1rem;
   gap: 10px;
 }
@@ -146,8 +156,11 @@
   .seats {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+  }
+  .seats .seats_goBack {
+    margin-left: 5rem;
   }
   .seats_all_seats {
     display: flex;

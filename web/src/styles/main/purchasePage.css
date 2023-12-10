@@ -82,6 +82,7 @@
   display: flex;
   justify-content: start;
   margin-left: 5vw;
+  margin-top: 2rem;
 }
 .data_payment form {
   display: flex;

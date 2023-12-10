@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="../styles/generales.css" />
         <script src="https://kit.fontawesome.com/9e87e4d4e8.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
         <header class="header">
             <nav class="header_nav">
                 <ul class="header_ul">
                     <li class="header_li">
                         <div class="header_interestLinks">
-                            <a href="/">TODAS LAS FUNCIONES</a>
-                            <a href="/">OFERTAS</a>
+                            <a href="mainPage.html">TODAS LAS FUNCIONES</a>
+                            <a href="notFound.html">OFERTAS</a>
                         </div>
                     </li>
                     <li class="header_li">
@@ -39,8 +40,9 @@
                 </ul>
             </nav>
         </header>
+
         <section class="data_formulary">
-            <form>
+            <form onsubmit="return false;">
                 <h2>Introduce tus datos</h2>
                 <div class="data_formulary_inputs">
                     <div>
@@ -69,32 +71,8 @@
             </form>
         </section>
 
-        <section class="data_information">
-            <div class="data_information_section">
-                <h2>Tu selección</h2>
-                <h3>TÍTULO DEL ESPECTÁCULO</h3>
-                <div class="data_information_section_custom">
-                    <div class="data_information_section_date">
-                        <div>
-                            <i class="fa-regular fa-clock"></i>
-                            <span>Hora</span>
-                        </div>
-
-                        <div>
-                            <i class="fa-regular fa-calendar"></i>
-                            <span>Fecha</span>
-                        </div>
-                    </div>
-                    <div class="data_information_section_place">
-                        <span>Fila X</span>
-                        <span>Asiento Y</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="data_payment">
-            <form>
+            <form onsubmit="return false;">
                 <h2>Método de pago</h2>
                 <div class="container_payment">
                     <div>
@@ -115,6 +93,7 @@
                 <a class="purchase_buttons_purchase" href="purchaseCompleted.html">PAGAR</a>
             </div>
         </section>
+
         <footer class="footer">
             <div class="footer_wrapper">
                 <div class="footer_column">
@@ -125,11 +104,11 @@
                 </div>
                 <div class="footer_column">
                     <h2>QUIENES SOMOS</h2>
-                    <a href="#">Quienes somos</a>
+                    <a href="aboutUs.html">Quienes somos</a>
                 </div>
                 <div class="footer_column">
                     <h2>PROMOCIONES</h2>
-                    <a href="#">Todas las promociones</a>
+                    <a href="notFound.html">Todas las promociones</a>
                 </div>
                 <div class="footer_column">
                     <h2>NUESTRAS REDES</h2>
@@ -147,4 +126,8 @@
             </div>
         </footer>
     </body>
+
+    <head>
+        <script src="../services/purchasePage.js"></script>
+    </head>
 </html>

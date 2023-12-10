@@ -29,15 +29,15 @@ function saveObrasToJson(listaObras) {
 
 const obraService = {
   getAllObras: () => {
-    return listaObras;
+    return getObrasFromJSON();
   },
   getObraById: (id) => {
-    return getObrasFromJSON().find((obra) => {
-      obra.id === id;
+    return getObrasFromJSON().filter((obra) => {
+      return obra.id === id;
     });
   },
   getObrasByNombre: (nombre) => {
-    return listaObras.filter((obra) => {
+    return getObrasFromJSON().filter((obra) => {
       return (
         obra.nombre.toLowerCase().replace(/\s/g, "") ===
         nombre.trim().toLowerCase().replace(/\s/g, "")
@@ -49,13 +49,14 @@ const obraService = {
       return obra.categoria.toLowerCase() === categoria.toLowerCase();
     });
   },
-  createObra: (nombre, descripcion, categoria) => {
-    let obra = new Obra(nombre, descripcion, categoria);
+  createObra: (nombre, descripcion, categoria, image_url) => {
+    let obra = new Obra(nombre, descripcion, categoria, image_url);
     let listaAsientos = [];
-    for (let index = 0; index <= 63; index++) {
-      listaAsientos.push(new Asiento(index));
+    for (let index = 0; index < 63; index++) {
+      listaAsientos.push(new Asiento(index, 5));
     }
     obra.asientos = listaAsientos;
+    listaAsientos = getObrasFromJSON();
     listaObras.push(obra);
     saveObrasToJson(listaObras);
   },
@@ -86,20 +87,21 @@ const obraService = {
   },
   deleteObra: (id) => {
     let obras = getObrasFromJSON();
-    const index = obras.findIndex((obras) => {
-      obras.id.toLowerCase() === id.toLowerCase();
+    const index = obras.findIndex((obra) => {
+      obra.id === id;
     });
     obras.splice(index, 1);
     saveObrasToJson(obras);
   },
   makeCompra: function (id_obra, id_asiento) {
     let obras = this.getAllObras();
-    const index = obras.filter((obra) => {
-      obra.id.toLowerCase() === id_obra.toLowerCase();
-    });
-    obras[index].asientos.map((asiento) => {
-      if (asiento.numero === id_asiento) {
-        asiento.ocupado = true;
+    obras.map((obra) => {
+      if (obra.id === id_obra) {
+        obra.asientos.map((asiento) => {
+          if (asiento.numero === id_asiento) {
+            asiento.ocupado = true;
+          }
+        });
       }
     });
     saveObrasToJson(obras);
@@ -107,5 +109,4 @@ const obraService = {
 };
 
 listaObras = getObrasFromJSON();
-
 module.exports = obraService;

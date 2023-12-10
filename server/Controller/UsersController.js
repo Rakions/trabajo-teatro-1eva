@@ -12,12 +12,12 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { nombre, email, contra } = req.body;
-  res.send(userService.createUser(nombre, email, contra));
+  const { nombre, email, contra, entradas } = req.body;
+  res.send(userService.createUser(nombre, email, contra, entradas));
 });
 
 router.delete("/:id", (req, res) => {
-  const id = req.params;
+  const id = req.body.id;
   res.send(userService.deleteUser(id));
 });
 

@@ -19,8 +19,8 @@ router.get("/categoria/:categoria", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { nombre, descripcion, categoria } = req.body;
-  res.send(obraService.createObra(nombre, descripcion, categoria));
+  const { nombre, descripcion, categoria, imagen } = req.body;
+  res.send(obraService.createObra(nombre, descripcion, categoria, imagen));
 });
 
 router.put("/nombre", (req, res) => {
@@ -36,6 +36,18 @@ router.put("/descripcion", (req, res) => {
 router.put("/categoria", (req, res) => {
   const { id, categoria } = req.body;
   res.send(obraService.updateObraCategoria(id, categoria));
+});
+
+router.put("/compra", (req, res) => {
+  const { id_obra, id_asiento } = req.body;
+  console.log(id_obra, id_asiento);
+  res.send(obraService.makeCompra(id_obra, id_asiento));
+});
+
+router.delete("/", (req, res) => {
+  const id = req.body.id;
+  console.log(id);
+  res.send(obraService.deleteObra(id));
 });
 
 module.exports = router;

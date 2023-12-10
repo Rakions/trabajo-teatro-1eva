@@ -33,8 +33,10 @@ const userService = {
       return user.id.toLowerCase() === id.toLowerCase();
     });
   },
-  createUser: (nombre, email, contra) => {
-    let user = new User(nombre, email, contra);
+  createUser: (nombre, email, contra, entradas) => {
+    let user = new User(nombre, email, contra, entradas);
+    console.log(entradas);
+    listaUser = getUsersFromJson();
     listaUser.push(user);
     saveUsersToJson(listaUser);
   },
