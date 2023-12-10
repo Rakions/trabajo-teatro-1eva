@@ -8,7 +8,7 @@ async function getObraById() {
         redirect: "follow",
     };
 
-    const url = "http://localhost:3000/obras/" + id;
+    const url = "http://54.242.0.71/obras/" + id;
     const response = await fetch(url, requestOptions);
     const result = await response.json();
     return result;
@@ -29,7 +29,7 @@ async function getAsientoPorId(ID_asiento) {
         redirect: "follow",
     };
 
-    const url = "http://localhost:3000/asientos";
+    const url = "http://54.242.0.71/asientos";
     const response = await fetch(url, requestOptions);
     const result = await response.json();
     return result;

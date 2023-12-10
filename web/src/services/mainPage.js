@@ -4,7 +4,7 @@ async function getObras() {
         redirect: "follow",
     };
 
-    const response = await fetch("http://localhost:3000/obras", requestOptions);
+    const response = await fetch("http://54.242.0.71/obras", requestOptions);
     const result = await response.text();
     return JSON.parse(result);
 }
@@ -15,7 +15,7 @@ async function getObrasCategoria(categoria) {
         redirect: "follow",
     };
 
-    const response = await fetch("http://localhost:3000/obras/categoria/" + categoria, requestOptions);
+    const response = await fetch("http://54.242.0.71/obras/categoria/" + categoria, requestOptions);
     const result = await response.text();
     cargarObrasFiltro(JSON.parse(result));
 }

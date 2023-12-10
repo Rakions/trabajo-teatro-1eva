@@ -19,7 +19,7 @@ async function makePurchase(seatId) {
     };
 
     try {
-        const response = await fetch("http://localhost:3000/obras/compra", requestOptions);
+        const response = await fetch("http://54.242.0.71/obras/compra", requestOptions);
         if (!response.ok) {
             throw new Error(`Failed to make a purchase for seat ${id_asiento}.`);
         }
