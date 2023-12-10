@@ -18,8 +18,20 @@ Trabajo de final de evaluacion
 ```bash
 docker build -t teatro-galeguista .
 ```
+Para el frontend
 ```
 docker run -dit --name teatro-galeguista-app -p 8080:80 teatro-galeguista
 ```
+Para el backend
+```
+docker run -dit --name teatro-galeguista-app -p 80:3000 teatro-galeguista
+```
 
-http://localhost:8080/pages/mainPage.html
+# Desarrollo
+Para el desarrollo de la web, en el servidor habrá que instalar todas las dependencias
+```
+npm i
+```
+Y en el frontend en desarrollo, habrá que cambiar la IP de la API 54.242.0.71 para la de localhost:3000
+
+http://teatrogaleguista.s3.amazonaws.com/pages/mainPage.html
